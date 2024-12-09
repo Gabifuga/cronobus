@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o CSS do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <title>Cronobus</title>
+
+    <!-- estilo foto de fundo-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .background-image {
+            background-image: url("src/images/Ponte_do_Fandango.jpg");
+            background-repeat: no-repeat;
+            background-position: center ;
+            background-attachment: fixed;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<!-- cabeçalho -->
+<div class="header">
+    <h1>Cronobus</h1> <i class="fa-solid fa-bus"></i>
+    <p>Seu serviço de Cronograma de ônibus!</p>
+    <p>melhor de Cachoeira do Sul desde 2024(e único)</p>
+</div>
+
+<!-- foto de fundo da página -->
+<body background="src/images/Ponte_do_Fandango.jpg">   
+    
+    <div id="container">
+        <!-- Input de pesquisa -->
+        <div class="input-group">
+            <!-- Ícone da lupa -->
+            <div class="input-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <!-- Campo de input de pesquisa -->
+            <input 
+                id="search" 
+                type="text" 
+                class="input-field" 
+                placeholder="Digite a linha de ônibus ou a parada, abra a imagen em nova guia para mais detalhes"
+            >
+        </div>
+    
+        
+
+        <!-- Lista linhas -->
+        <ul class="items">
+
+            <!-- Tabela da linha -->
+            <li class="item">
+                <!-- Imagem do item -->
+                <div class="item-image">
+                    <img  src="src/images/001 - QUINTA - DIAS ÚTEIS.jpg" alt="001 - QUINTA - DIAS ÚTEIS">
+                </div>
+
+                <!-- Conteúdo do item -->
+                <div class="item-content">
+                    <!-- Nome da linha -->
+                    <h2   class="item-title">001 - QUINTA - DIAS ÚTEIS</h2>
+
+                    <!-- acessibilidade -->
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        Acessivel à cadeirantes
+                    </p>
+
+                    <!-- Descrição -->
+                    <p class="item-description">
+                        Paradas: Usina e H.C.B.
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="item">
+                <!-- Imagem do item -->
+                <div class="item-image">
+                    <img src="src/images/001 - QUINTA - SÁBADO.jpg" alt="001 - QUINTA - SÁBADO.jpg">
+                </div>
+
+                <!-- Conteúdo do item -->
+                <div class="item-content">
+                    <!-- Nome da linha -->
+                    <h2 class="item-title">001 - QUINTA - SÁBADO.</h2>
+
+                    <!-- acessibilidade -->
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        Acessivel à cadeirantes
+                    </p>
+
+                    <!-- Descrição -->
+                    <p class="item-description">
+                        Paradas: Usina, H.C.B, Promorar e Terminal.
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="item">
+                <!-- Imagem do item -->
+                <div class="item-image">
+                    <img src="src/images/001 - QUINTA;PROMORAR - DOMINGOS E FERIADOS.jpg" alt="001 - QUINTA;PROMORAR - DOMINGOS E FERIADOSjpg">
+                </div>
+
+                <!-- Conteúdo do item -->
+                <div class="item-content">
+                    <!-- Nome da linha -->
+                    <h2 class="item-title">001 - QUINTA;PROMORAR - DOMINGOS E FERIADOS</h2>
+
+                    <!-- acessibilidade -->
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        Acessivel à cadeirantes
+                    </p>
+
+                    <!-- Descrição -->
+                    <p class="item-description">
+                        Paradas: Usina, H.C.B e Promorar.
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="item">
+                <!-- Imagem do item -->
+                <div class="item-image">
+                    <img src="src/images/011 - NOÊMIA ; SANTA HELENA ; UFSM - DIAS ÚTEIS.jpg" alt="011 - NOÊMIA ; SANTA HELENA ; UFSM - DIAS ÚTEIS.jpg">
+                </div>
+
+                <!-- Conteúdo do item -->
+                <div class="item-content">
+                    <!-- Nome da linha -->
+                    <h2 class="item-title">011 - NOÊMIA ; SANTA HELENA ; UFSM - DIAS ÚTEIS.</h2>
+
+                    <!-- acessibilidade -->
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        Acessivel à cadeirantes
+                    </p>
+
+                    <!-- Descrição -->
+                    <p class="item-description">
+                        Paradas: H.C.B saída, Praça Honorato, Via, UFSM, 5 esquinas H.C.B chegada.
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="item">
+                <!-- Imagem do item -->
+                <div class="item-image">
+                    <img src="src/images/014 - NOÊMIA - SÁBADO.jpg" alt="014 - NOÊMIA - SÁBADO.jpg">
+                </div>
+
+                <!-- Conteúdo do item -->
+                <div class="item-content">
+                    <!-- Nome da linha -->
+                    <h2 class="item-title">014 - NOÊMIA - SÁBADO</h2>
+
+                    <!-- acessibilidade -->
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        Acessivel à cadeirantes
+                    </p>
+
+                    <!-- Descrição -->
+                    <p class="item-description">
+                        Paradas: H.C.B saída, Praça Honorato, Via, UFSM, 5 esquinas H.C.B chegada, Noêmia e Cohab.
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="item">
+                <!-- Imagem do item -->
+                <div class="item-image">
+                    <img src="src/images/014 - NOÊMIA COHAB PRADO - DOMINGO E FERIADOS.jpg" alt="014 - NOÊMIA COHAB PRADO - DOMINGO E FERIADOS.jpg">
+                </div>
+
+                <!-- Conteúdo do item -->
+                <div class="item-content">
+                    <!-- Nome da linha -->
+                    <h2 class="item-title">014 - NOÊMIA COHAB PRADO - DOMINGO E FERIADOS</h2>
+
+                    <!-- acessibilidade -->
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        Acessivel à cadeirantes
+                    </p>
+
+                    <!-- Descrição -->
+                    <p class="item-description">
+                        Paradas: Prado saída, Praça Honorato, Rodoviaria Cohab, Hotel União, Noêmia, Cohab, Imec, Fenarroz, Prado chegada.
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="item">
+                <!-- Imagem do item -->
+                <div class="item-image">
+                    <img src="src/images/021 - PROMORAR - DIAS ÚTEIS.jpg" alt="021 - PROMORAR - DIAS ÚTEIS.jpg">
+                </div>
+
+                <!-- Conteúdo do item -->
+                <div class="item-content">
+                    <!-- Nome da linha -->
+                    <h2 class="item-title">021 - PROMORAR - DIAS ÚTEIS</h2>
+
+                    <!-- acessibilidade -->
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        Acessivel à cadeirantes
+                    </p>
+
+                    <!-- Descrição -->
+                    <p class="item-description">
+                        Paradas: Penha saída, H.C.B, Penha chegada.
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="item">
+                <!-- Imagem do item -->
+                <div class="item-image">
+                    <img src="src/images/021 - PROMORAR - SÁBADO.jpg" alt="021 - PROMORAR - SÁBADO.jpg">
+                </div>
+
+                <!-- Conteúdo do item -->
+                <div class="item-content">
+                    <!-- Nome da linha -->
+                    <h2 class="item-title">021 - PROMORAR - SÁBADO</h2>
+
+                    <!-- acessibilidade -->
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        Acessivel à cadeirantes
+                    </p>
+
+                    <!-- Descrição -->
+                    <p class="item-description">
+                        Paradas: Penha saída, H.C.B, Penha chegada, Promorar, Terminal, Usina.
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="item">
+                <!-- Imagem do item -->
+                <div class="item-image">
+                    <img src="src/images/031 - COHAB - SÁBADO.jpg" alt="031 - COHAB - SÁBADO.jpg">
+                </div>
+
+                <!-- Conteúdo do item -->
+                <div class="item-content">
+                    <!-- Nome da linha -->
+                    <h2 class="item-title">031 - COHAB - SÁBADO</h2>
+
+                    <!-- acessibilidade -->
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        Acessivel à cadeirantes
+                    </p>
+
+                    <!-- Descrição -->
+                    <p class="item-description">
+                        Paradas: Prado, Via, Honorato, Cohab, 5 esquinas, H.C.B, Prado, Hotel União, Noe.
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="item">
+                <!-- Imagem do item -->
+                <div class="item-image">
+                    <img src="src/images/031 - COHAB ; PRADO - DIAS ÚTEIS.jpg" alt="031 - COHAB ; PRADO - DIAS ÚTEIS.jpg">
+                </div>
+
+                <!-- Conteúdo do item -->
+                <div class="item-content">
+                    <!-- Nome da linha -->
+                    <h2 class="item-title">031 - COHAB ; PRADO - DIAS ÚTEIS</h2>
+
+                    <!-- acessibilidade -->
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        Acessivel à cadeirantes
+                    </p>
+
+                    <!-- Descrição -->
+                    <p class="item-description">
+                        Paradas: Prado, Via, Honorato, Cohab, 5 esquinas, H.C.B.
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="item">
+                <!-- Imagem do item -->
+                <div class="item-image">
+                    <img src="src/images/041 - SOARES P. VERDE - DIAS ÚTEIS.jpg" alt="041 - SOARES P. VERDE - DIAS ÚTEIS.jpg">
+                </div>
+
+                <!-- Conteúdo do item -->
+                <div class="item-content">
+                    <!-- Nome da linha -->
+                    <h2 class="item-title">041 - SOARES P. VERDE - DIAS ÚTEIS</h2>
+
+                    <!-- acessibilidade -->
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        Acessivel à cadeirantes
+                    </p>
+
+                    <!-- Descrição -->
+                    <p class="item-description">
+                        Paradas: Fenarroz saída, Honorato, Hotel União, Liberato, Fenarroz chegada.
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="item">
+                <!-- Imagem do item -->
+                <div class="item-image">
+                    <img src="src/images/041 - SOARES P. VERDE - SÁBADO.jpg" alt="041 - SOARES P. VERDE - SÁBADO.jpg">
+                </div>
+
+                <!-- Conteúdo do item -->
+                <div class="item-content">
+                    <!-- Nome da linha -->
+                    <h2 class="item-title">041 - SOARES P. VERDE - SÁBADO</h2>
+
+                    <!-- acessibilidade -->
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        Acessivel à cadeirantes
+                    </p>
+
+                    <!-- Descrição -->
+                    <p class="item-description">
+                        Paradas: Conde POA saída, Honorato, Hotel união, Liberato, Conde POA chegada.
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="item">
+                <!-- Imagem do item -->
+                <div class="item-image">
+                    <img src="src/images/072 - CHARQUEADA CENTRO PRADO - DIAS ÚTEIS.jpg" alt="072 - CHARQUEADA CENTRO PRADO - DIAS ÚTEIS.jpg">
+                </div>
+
+                <!-- Conteúdo do item -->
+                <div class="item-content">
+                    <!-- Nome da linha -->
+                    <h2 class="item-title">072 - CHARQUEADA CENTRO PRADO - DIAS ÚTEIS</h2>
+
+                    <!-- acessibilidade -->
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        Acessivel à cadeirantes
+                    </p>
+
+                    <!-- Descrição -->
+                    <p class="item-description">
+                        Paradas: Conde POA saída, Honorato, Hotel união, Prado, Conde POA chegada.
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="item">
+                <!-- Imagem do item -->
+                <div class="item-image">
+                    <img src="src/images/072 - CHARQUEADA CENTRO PRADO - SÁBADO.jpg" alt="072 - CHARQUEADA CENTRO PRADO - SÁBADO.jpg">
+                </div>
+
+                <!-- Conteúdo do item -->
+                <div class="item-content">
+                    <!-- Nome da linha -->
+                    <h2 class="item-title">072 - CHARQUEADA CENTRO PRADO - SÁBADO</h2>
+
+                    <!-- acessibilidade -->
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        Acessivel à cadeirantes
+                    </p>
+
+                    <!-- Descrição -->
+                    <p class="item-description">
+                        Paradas: Conde POA saída, Honorato, Hotel união, Prado, Conde POA chegada.
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="item">
+                <!-- Imagem do item -->
+                <div class="item-image">
+                    <img src="src/images/081 - PONCHE VERDE ; FÁTIMA - DIAS ÚTEIS.jpg" alt="081 - PONCHE VERDE ; FÁTIMA - DIAS ÚTEIS.jpg">
+                </div>
+
+                <!-- Conteúdo do item -->
+                <div class="item-content">
+                    <!-- Nome da linha -->
+                    <h2 class="item-title">081 - PONCHE VERDE ; FÁTIMA - DIAS ÚTEIS</h2>
+
+                    <!-- acessibilidade -->
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        Acessivel à cadeirantes
+                    </p>
+
+                    <!-- Descrição -->
+                    <p class="item-description">
+                        Paradas: Loló, H.C.B, Honorato, p.Verde, H.U., Imec.
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="item">
+                <!-- Imagem do item -->
+                <div class="item-image">
+                    <img src="src/images/081 - PONCHE VERDE FÁTIMA - SÁBADO.jpg" alt="081 - PONCHE VERDE FÁTIMA - SÁBADO.jpg">
+                </div>
+
+                <!-- Conteúdo do item -->
+                <div class="item-content">
+                    <!-- Nome da linha -->
+                    <h2 class="item-title">081 - PONCHE VERDE FÁTIMA - SÁBADO</h2>
+
+                    <!-- acessibilidade -->
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        Acessivel à cadeirantes
+                    </p>
+
+                    <!-- Descrição -->
+                    <p class="item-description">
+                        Paradas: Loló, H.C.B, Honorato, p.Verde, H.U., Imec.
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="item">
+                <!-- Imagem do item -->
+                <div class="item-image">
+                    <img src="src/images/902 - INTERDISTRITAL TRÊS VENDAS - DIAS ÚTEIS.jpg" alt="902 - INTERDISTRITAL TRÊS VENDAS - DIAS ÚTEIS.jpg">
+                </div>
+
+                <!-- Conteúdo do item -->
+                <div class="item-content">
+                    <!-- Nome da linha -->
+                    <h2 class="item-title">902 - INTERDISTRITAL TRÊS VENDAS - DIAS ÚTEIS</h2>
+
+                    <!-- acessibilidade -->
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        Acessivel à cadeirantes
+                    </p>
+
+                    <!-- Descrição -->
+                    <p class="item-description">
+                        Paradas: Saída Patronato, Posto Edson, Trevo Horbach, 5 esquinas, H.C.B, P.H.
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="item">
+                <!-- Imagem do item -->
+                <div class="item-image">
+                    <img src="src/images/902 - INTERDISTRITAL TRÊS VENDAS - SÁBADO.jpg" alt="902 - INTERDISTRITAL TRÊS VENDAS - SÁBADO.jpg">
+                </div>
+
+                <!-- Conteúdo do item -->
+                <div class="item-content">
+                    <!-- Nome da linha -->
+                    <h2 class="item-title">902 - INTERDISTRITAL TRÊS VENDAS - SÁBADO</h2>
+
+                    <!-- acessibilidade -->
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        Acessivel à cadeirantes
+                    </p>
+
+                    <!-- Descrição -->
+                    <p class="item-description">
+                        Paradas: Saída Patronato, Posto Edson, Trevo Horbach, 5 esquinas, H.C.B, Praça H.
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="item">
+                <!-- Imagem do item -->
+                <div class="item-image">
+                    <img src="src/images/904 - INTERDISTRITAL SÃO LOURENÇO - DIAS ÚTEIS.jpg" alt="904 - INTERDISTRITAL SÃO LOURENÇO - DIAS ÚTEIS.jpg">
+                </div>
+
+                <!-- Conteúdo do item -->
+                <div class="item-content">
+                    <!-- Nome da linha -->
+                    <h2 class="item-title">904 - INTERDISTRITAL SÃO LOURENÇO - DIAS ÚTEIS</h2>
+
+                    <!-- acessibilidade -->
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        Acessivel à cadeirantes
+                    </p>
+
+                    <!-- Descrição -->
+                    <p class="item-description">
+                        Paradas: Saída São Lourenço, Ferreira, Vila Aeroclube, Senai, H.C.B.
+                    </p>
+                    
+                </div>
+            </li>           
+
+
+            <!-- Mensagem "nenhum resultado encontrado" -->
+            <li id="no_results">
+                <p>Nenhum resultado encontrado</p>
+            </li>
+        </ul>
+    </div>
+    <!-- Link para o arquivo JavaScript -->
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
